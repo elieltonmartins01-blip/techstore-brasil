@@ -46,9 +46,18 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 ## 📁 Estrutura do Projeto
 
 techstore-brasil/
+
+│
+
+├── dashboard/ ← Arquivo do Power BI
+
+│ └── PROJETO.pbix
+
+=======
 │
 ├── dashboard/ ← Arquivo do Power BI
 │ └── PROJETO.pbix
+
 │
 ├── prints/ ← Prints do dashboard
 │ └── dashboard.png
@@ -64,6 +73,8 @@ techstore-brasil/
 └── README.md ← Documentação
 
 ---
+
+>>>>>>> 89ba01f (docs: Atualiza README com versão final corrigida)
 ## 🎯 Insights do Dashboard
 
 ### 📈 Evolução do Faturamento
@@ -89,4 +100,38 @@ techstore-brasil/
 
 ### 1. Clonar o repositório
 ```bash
+<<<<<<< HEAD
 git clone https://github.com/seu-usuario/techstore-brasil.git
+=======
+git clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.git
+```
+
+### 2. Importar dados para o MySQL
+```bash
+mysql -u root -p techsore_brasil < sql/techsore_brasil_structure.sql
+```
+
+### 3. Abrir o dashboard no Power BI
+- Abrir o arquivo `dashboard/PROJETO.pbix`
+- Atualizar a conexão com o banco de dados
+- **Pré-requisito:** Power BI Desktop instalado (download gratuito)
+
+---
+
+## 📝 Licença
+
+Este projeto é de uso livre para fins educacionais e de portfólio.
+
+---
+
+## 📬 Vamos Conectar
+
+Fique à vontade para entrar em contato comigo para feedbacks, dúvidas ou oportunidades:
+
+- LinkedIn: [Elielton Martins](https://www.linkedin.com/in/elielton-martins/)
+- GitHub: [elieltonmartins01-blip](https://github.com/elieltonmartins01-blip)
+- E-mail: elieltonmartins01@gmail.com
+
+---
+
+⭐ Se você gostou deste projeto, deixe uma estrela no repositório!
