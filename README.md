@@ -46,14 +46,9 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 ## 📁 Estrutura do Projeto
 
 techstore-brasil/
-
 │
-
 ├── dashboard/ ← Arquivo do Power BI
-
 │ └── PROJETO.pbix
-
-=======
 │
 ├── dashboard/ ← Arquivo do Power BI
 │ └── PROJETO.pbix
@@ -72,9 +67,6 @@ techstore-brasil/
 │
 └── README.md ← Documentação
 
----
-
->>>>>>> 89ba01f (docs: Atualiza README com versão final corrigida)
 ## 🎯 Insights do Dashboard
 
 ### 📈 Evolução do Faturamento
