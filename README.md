@@ -32,9 +32,13 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 ## 📁 Estrutura do Projeto
 
 techstore-brasil/
+
 │
+
 ├── dashboard/ ← Arquivo do Power BI
+
 │ └── PROJETO.pbix
+
 │
 ├── prints/ ← Prints do dashboard
 │ └── dashboard.png
