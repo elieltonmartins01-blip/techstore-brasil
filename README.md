@@ -1,6 +1,14 @@
 # 🏪 TechStore Brasil - Dashboard de Vendas
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=black)
+
+> 📊 **Dashboard interativo de vendas** desenvolvido para a loja fictícia TechStore Brasil, com análise de faturamento, ticket médio e performance de produtos e vendedores.
+
 ![Dashboard](prints/dashboard.png)
+
+---
 
 ## 📊 Sobre o Projeto
 
@@ -12,6 +20,8 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 - 📊 Visualização de dados (Power BI)
 - 🎨 Criação de dashboards interativos
 
+---
+
 ## 📈 Principais Indicadores
 
 | Indicador | Valor |
@@ -22,6 +32,8 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 | **Produto Mais Vendido** | Inspiron Plus |
 | **Unidades Vendidas** | 53.000 |
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 - 🐍 **Python** - Geração de dados fictícios
@@ -29,16 +41,14 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 - 📊 **Power BI** - Dashboard e visualizações
 - 📁 **Git & GitHub** - Controle de versão
 
+---
+
 ## 📁 Estrutura do Projeto
 
 techstore-brasil/
-
 │
-
 ├── dashboard/ ← Arquivo do Power BI
-
 │ └── PROJETO.pbix
-
 │
 ├── prints/ ← Prints do dashboard
 │ └── dashboard.png
@@ -53,6 +63,7 @@ techstore-brasil/
 │
 └── README.md ← Documentação
 
+---
 ## 🎯 Insights do Dashboard
 
 ### 📈 Evolução do Faturamento
@@ -71,6 +82,8 @@ techstore-brasil/
 3. Redmi Note Ultra - 1.800 unidades
 4. Virtuoso Pro - 1.500 unidades
 5. Kumara Pro - 1.200 unidades
+
+---
 
 ## 🚀 Como Executar o Projeto
 
