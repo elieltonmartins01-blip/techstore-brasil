@@ -44,24 +44,25 @@ Dashboard de vendas desenvolvido para a loja fictícia **TechStore Brasil**, com
 ---
 
 ## 📁 Estrutura do Projeto
-```
+
+```text
 techstore-brasil/
 │
-├── dashboard/                 ← Arquivo do Power BI
+├── dashboard/              ← Arquivo do Power BI
 │   └── PROJETO.pbix
 │
-├── prints/                    ← Prints do dashboard
+├── prints/                 ← Prints do dashboard
 │   └── dashboard.png
 │
-├── scripts/                   ← Scripts Python
+├── scripts/                ← Scripts Python
 │   ├── clientes.py
 │   ├── produtos.py
 │   └── vendas.py
 │
-├── sql/                       ← Scripts SQL
-│   └── techsore_brasil_structure.sql
+├── sql/                    ← Scripts SQL
+│   └── techstore_brasil_structure.sql
 │
-└── README.md                  ← Documentação
+└── README.md               ← Documentação
 ```
 
 ## 🎯 Insights do Dashboard
