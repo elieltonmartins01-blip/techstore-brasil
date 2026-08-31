@@ -90,9 +90,8 @@ techstore-brasil/
 
 ### 1. Clonar o repositório
 ```bash
-git clone https://github.com/seu-usuario/techstore-brasil.git
-=======
-git clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.git
+git clone https://github.com/elieltonmartins01-blip/techstore-brasil.git
+
 ```
 
 ### 2. Importar dados para o MySQL
