@@ -90,7 +90,6 @@ techstore-brasil/
 
 ### 1. Clonar o repositório
 ```bash
-<<<<<<< HEAD
 git clone https://github.com/seu-usuario/techstore-brasil.git
 =======
 git clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.gitgit clone https://github.com/seu-usuario/techstore-brasil.git
