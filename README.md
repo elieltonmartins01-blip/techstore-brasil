@@ -96,7 +96,7 @@ git clone https://github.com/elieltonmartins01-blip/techstore-brasil.git
 
 ### 2. Importar dados para o MySQL
 ```bash
-mysql -u root -p techsore_brasil < sql/techsore_brasil_structure.sql
+mysql -u root -p techstore_brasil < sql/techstore_brasil_structure.sql
 ```
 
 ### 3. Abrir o dashboard no Power BI
