@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: techsore_brasil
+-- Host: 127.0.0.1    Database: techstore_brasil
 -- ------------------------------------------------------
 -- Server version	8.0.46
 
@@ -16,22 +16,19 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `produtos`
+-- Table structure for table `formas_pagamento`
 --
 
-DROP TABLE IF EXISTS `produtos`;
+DROP TABLE IF EXISTS `formas_pagamento`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `produtos` (
-  `id_produto` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(150) NOT NULL,
-  `id_categoria` int NOT NULL,
-  `id_fornecedor` int NOT NULL,
-  `preco` decimal(10,2) NOT NULL,
-  `custo` decimal(10,2) NOT NULL,
-  `estoque` int DEFAULT '0',
-  PRIMARY KEY (`id_produto`)
-) ENGINE=InnoDB AUTO_INCREMENT=456 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `formas_pagamento` (
+  `id_pagamentos` int NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(50) NOT NULL,
+  `permite_parcelamento` tinyint(1) NOT NULL,
+  PRIMARY KEY (`id_pagamentos`),
+  UNIQUE KEY `descricao` (`descricao`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

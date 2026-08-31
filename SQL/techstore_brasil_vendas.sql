@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: techsore_brasil
+-- Host: 127.0.0.1    Database: techstore_brasil
 -- ------------------------------------------------------
 -- Server version	8.0.46
 
@@ -16,25 +16,28 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `vendedores`
+-- Table structure for table `vendas`
 --
 
-DROP TABLE IF EXISTS `vendedores`;
+DROP TABLE IF EXISTS `vendas`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `vendedores` (
-  `id_vendedores` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(100) NOT NULL,
-  `email` varchar(159) DEFAULT NULL,
-  `telefone` varchar(20) DEFAULT NULL,
-  `cidade` varchar(160) NOT NULL,
-  `estado` char(2) NOT NULL,
-  `data_admissao` date NOT NULL,
-  `salario` decimal(10,2) NOT NULL,
-  `comissao` decimal(5,2) DEFAULT '0.00',
-  PRIMARY KEY (`id_vendedores`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `vendas` (
+  `id_vendas` int NOT NULL AUTO_INCREMENT,
+  `data_venda` datetime NOT NULL,
+  `id_cliente` int NOT NULL,
+  `id_vendedores` int NOT NULL,
+  `id_pagamentos` int NOT NULL,
+  `valor_total` decimal(10,2) NOT NULL,
+  `status` enum('Pendente','Pago','Enviado','Entregue','Cancelado') NOT NULL,
+  PRIMARY KEY (`id_vendas`),
+  KEY `fk_vendas_clientes` (`id_cliente`),
+  KEY `fk_vendas_vendedores` (`id_vendedores`),
+  KEY `fk_vendas_pagamentos` (`id_pagamentos`),
+  CONSTRAINT `fk_vendas_clientes` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`),
+  CONSTRAINT `fk_vendas_pagamentos` FOREIGN KEY (`id_pagamentos`) REFERENCES `formas_pagamento` (`id_pagamentos`),
+  CONSTRAINT `fk_vendas_vendedores` FOREIGN KEY (`id_vendedores`) REFERENCES `vendedores` (`id_vendedores`)
+) ENGINE=InnoDB AUTO_INCREMENT=21383 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: techsore_brasil
+-- Host: 127.0.0.1    Database: techstore_brasil
 -- ------------------------------------------------------
 -- Server version	8.0.46
 
@@ -16,28 +16,26 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `vendas`
+-- Table structure for table `item_venda`
 --
 
-DROP TABLE IF EXISTS `vendas`;
+DROP TABLE IF EXISTS `item_venda`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `vendas` (
-  `id_vendas` int NOT NULL AUTO_INCREMENT,
-  `data_venda` datetime NOT NULL,
-  `id_cliente` int NOT NULL,
-  `id_vendedores` int NOT NULL,
-  `id_pagamentos` int NOT NULL,
-  `valor_total` decimal(10,2) NOT NULL,
-  `status` enum('Pendente','Pago','Enviado','Entregue','Cancelado') NOT NULL,
-  PRIMARY KEY (`id_vendas`),
-  KEY `fk_vendas_clientes` (`id_cliente`),
-  KEY `fk_vendas_vendedores` (`id_vendedores`),
-  KEY `fk_vendas_pagamentos` (`id_pagamentos`),
-  CONSTRAINT `fk_vendas_clientes` FOREIGN KEY (`id_cliente`) REFERENCES `clientes` (`id_cliente`),
-  CONSTRAINT `fk_vendas_pagamentos` FOREIGN KEY (`id_pagamentos`) REFERENCES `formas_pagamento` (`id_pagamentos`),
-  CONSTRAINT `fk_vendas_vendedores` FOREIGN KEY (`id_vendedores`) REFERENCES `vendedores` (`id_vendedores`)
-) ENGINE=InnoDB AUTO_INCREMENT=21383 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `item_venda` (
+  `id_item` int NOT NULL AUTO_INCREMENT,
+  `id_venda` int NOT NULL,
+  `id_produto` int NOT NULL,
+  `quantidade` int NOT NULL,
+  `valor_unitario` decimal(10,2) NOT NULL,
+  `desconto` decimal(10,2) DEFAULT '0.00',
+  `subtotal` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`id_item`),
+  KEY `fk_item_venda` (`id_venda`),
+  KEY `fk_item_produto` (`id_produto`),
+  CONSTRAINT `fk_item_produto` FOREIGN KEY (`id_produto`) REFERENCES `produtos` (`id_produto`),
+  CONSTRAINT `fk_item_venda` FOREIGN KEY (`id_venda`) REFERENCES `vendas` (`id_vendas`)
+) ENGINE=InnoDB AUTO_INCREMENT=28999 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +47,4 @@ CREATE TABLE `vendas` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-28 16:04:54
+-- Dump completed on 2026-08-28 16:04:53

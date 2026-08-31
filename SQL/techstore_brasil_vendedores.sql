@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: techsore_brasil
+-- Host: 127.0.0.1    Database: techstore_brasil
 -- ------------------------------------------------------
 -- Server version	8.0.46
 
@@ -16,19 +16,25 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `formas_pagamento`
+-- Table structure for table `vendedores`
 --
 
-DROP TABLE IF EXISTS `formas_pagamento`;
+DROP TABLE IF EXISTS `vendedores`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `formas_pagamento` (
-  `id_pagamentos` int NOT NULL AUTO_INCREMENT,
-  `descricao` varchar(50) NOT NULL,
-  `permite_parcelamento` tinyint(1) NOT NULL,
-  PRIMARY KEY (`id_pagamentos`),
-  UNIQUE KEY `descricao` (`descricao`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+CREATE TABLE `vendedores` (
+  `id_vendedores` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `email` varchar(159) DEFAULT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `cidade` varchar(160) NOT NULL,
+  `estado` char(2) NOT NULL,
+  `data_admissao` date NOT NULL,
+  `salario` decimal(10,2) NOT NULL,
+  `comissao` decimal(5,2) DEFAULT '0.00',
+  PRIMARY KEY (`id_vendedores`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -40,4 +46,4 @@ CREATE TABLE `formas_pagamento` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-08-28 16:04:53
+-- Dump completed on 2026-08-28 16:04:54

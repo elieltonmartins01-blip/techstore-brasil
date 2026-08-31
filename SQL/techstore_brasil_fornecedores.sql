@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.46, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: techsore_brasil
+-- Host: 127.0.0.1    Database: techstore_brasil
 -- ------------------------------------------------------
 -- Server version	8.0.46
 
@@ -16,27 +16,19 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `clientes`
+-- Table structure for table `fornecedores`
 --
 
-DROP TABLE IF EXISTS `clientes`;
+DROP TABLE IF EXISTS `fornecedores`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `clientes` (
-  `id_cliente` int NOT NULL AUTO_INCREMENT,
+CREATE TABLE `fornecedores` (
+  `id_fornecedor` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
-  `cpf` char(11) NOT NULL,
-  `email` varchar(150) NOT NULL,
-  `telefone` varchar(20) DEFAULT NULL,
-  `cidade` varchar(100) DEFAULT NULL,
-  `estado` char(2) DEFAULT NULL,
-  `sexo` enum('M','F') DEFAULT NULL,
-  `idade` int DEFAULT NULL,
-  `cadastro_data` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id_cliente`),
-  UNIQUE KEY `cpf` (`cpf`),
-  UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=1004 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `pais` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_fornecedor`),
+  UNIQUE KEY `nome` (`nome`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
