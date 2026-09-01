@@ -48,17 +48,6 @@ A solução utiliza **Python** para geração dos dados, **MySQL** para armazena
 💡 Insights de Negócio
 ```
 ---
-## 📈 Indicadores Principais
-
-| Indicador | Valores |
-|-----------|-------|
-| **Faturamento Total** | R$ 146,13 Mi |
-| **Total de Pedidos** | 15.000 |
-| **TKM** | R$ 9.742,00 |
-| **Produto Mais Vendido** | Inspiron Plus |
-| **Unidades Vendidas** | 53.000 |
-
----
 ## 📁 Estrutura do Projeto
 
 ```text
@@ -124,7 +113,7 @@ cd techstore-brasil
 mysql -u root -p techstore_brasil < sql/techstore_brasil_structure.sql
 
 ```
-**Observação:** O projeto utiliza o Power Query para etapas de tratamento e preparação dos dados antes da análise no Power BI.
+> **Observação:** O projeto utiliza o Power Query para etapas de tratamento e preparação dos dados antes da análise no Power BI.
 ---
 
 ### 3. Abrir o dashboard no Power BI
