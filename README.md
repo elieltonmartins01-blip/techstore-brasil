@@ -58,7 +58,6 @@ A solução utiliza **Python** para geração dos dados, **MySQL** para armazena
 | **Produto Mais Vendido** | Inspiron Plus |
 | **Unidades Vendidas** | 53.000 |
 
-
 ---
 ## 📁 Estrutura do Projeto
 
