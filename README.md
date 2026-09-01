@@ -132,7 +132,7 @@ O desenvolvimento deste projeto permitiu praticar:
 - Tratamento de dados utilizando Power Query
 - Criação de medidas e KPIs com DAX
 - Construção de dashboards orientados a indicadores de negócio
-- Documentação e versionamento utilizando Git e GitHub
+- Documentação e versionamento utilizando Git/GitHub
   
 ---
 ## 📝 Licença
