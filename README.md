@@ -48,7 +48,7 @@ A solução utiliza **Python** para geração dos dados, **MySQL** para armazena
 💡 Insights de Negócio
 ```
 ---
-## 📈 Indicadores
+## 📈 Principais Indicadores
 
 | Indicador | Valores |
 |-----------|-------|
