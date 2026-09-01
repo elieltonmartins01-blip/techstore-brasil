@@ -48,13 +48,13 @@ A solução utiliza **Python** para geração dos dados, **MySQL** para armazena
 💡 Insights de Negócio
 ```
 ---
-## 📈 Principais Indicadores
+## 📈 Indicadores
 
-| Indicador | Valor |
+| Indicador | Valores |
 |-----------|-------|
 | **Faturamento Total** | R$ 146,13 Mi |
 | **Total de Pedidos** | 15.000 |
-| **Ticket Médio** | R$ 9.742,00 |
+| **TKM** | R$ 9.742,00 |
 | **Produto Mais Vendido** | Inspiron Plus |
 | **Unidades Vendidas** | 53.000 |
 
